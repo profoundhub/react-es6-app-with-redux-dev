@@ -5,9 +5,10 @@ import css from './styles/style.styl';
 const rootDiv = document.getElementById('root');
 
 // Import Components
-
+import Main from './components/Main';
+// import Single from './components/Single';
+// import PhotoGrid from './components/PhotoGrid';
 
 // import react router deps
 
-
-render(<p>Auto Images</p>, rootDiv);
+render(<Main><p>Child</p></Main>, rootDiv);

@@ -2,12 +2,12 @@
 
 A simple React + Redux implementation.
 
-## Running This Dev. App.
+## Running This React Redux Gallery Dev. App.
 
-First `npm install` to grab all the necessary dependencies.
+First `yarn` to grab all the necessary dependencies.
 
-Then run `npm start` and open <localhost:7770> in your browser.
+Then run `yarn start` and open <localhost:7770> in your browser.
 
-## Production Build
+## Production Build: React Redux Gallery App.
 
-Run `npm build` to create a dist folder and a bundle.js file.
+Run `yarn build` to create a dist folder and a bundle.js file.
