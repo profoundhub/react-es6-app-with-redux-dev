@@ -7,6 +7,7 @@
   }
 
 // + Comment(s)
+// postId === index ?
   export function addComment(postId, author, comment) {
     return {
       type: 'ADD_COMMENT',
@@ -17,6 +18,7 @@
   }
 
 // - Comment(s)
+// i === index
   export function removeComment(postId, i) {
     return {
       type: 'REMOVE_COMMENT',
