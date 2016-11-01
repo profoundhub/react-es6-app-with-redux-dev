@@ -20,6 +20,7 @@ const router = (
     </Route>
   </Router>
 )
+// PhotoGrid & Single are Children of Main
 
 // render(<Main><p>Child</p></Main>, rootDiv);
-render(<Main />, rootDiv);
+render(router, rootDiv);
