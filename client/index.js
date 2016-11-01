@@ -10,4 +10,4 @@ const rootDiv = document.getElementById('root');
 // import react router deps
 
 
-render(router, rootDiv);
+render(<p>Hello</p>, rootDiv);
