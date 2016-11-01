@@ -6,9 +6,21 @@ const rootDiv = document.getElementById('root');
 
 // Import Components
 import Main from './components/Main';
-// import Single from './components/Single';
-// import PhotoGrid from './components/PhotoGrid';
+import Single from './components/Single';
+import PhotoGrid from './components/PhotoGrid';
 
 // import react router deps
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-render(<Main><p>Child</p></Main>, rootDiv);
+const router = (
+  <Router history={ browserHistory }>
+    <Route path="/" component={ Main }>
+      <IndexRoute component={ PhotoGrid }></IndexRoute>
+      <Route path="/view/:postId" component={ Single }></Route>
+    </Route>
+  </Router>
+)
+// PhotoGrid & Single are Children of Main
+
+// render(<Main><p>Child</p></Main>, rootDiv);
+render(router, rootDiv);
