@@ -11,4 +11,4 @@ import Main from './components/Main';
 
 // import react router deps
 
-render(<Main />, rootDiv);
+render(<Main><p>Child</p></Main>, rootDiv);

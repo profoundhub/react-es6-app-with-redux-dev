@@ -8,11 +8,14 @@ const Main = React.createClass({
         <h1>
           <Link to="/">React Redux Gallery App.</Link>
         </h1>
+        { React.cloneElement(this.props.children, this.props) }
       </div>
     )
   }
 });
 // {React.cloneElement(this.props.children, this.props)}
+// { React.cloneElement(this.props.children, this.props) }
+// <Single ...this.props />
 
 // export default Main;
 export default Main;
