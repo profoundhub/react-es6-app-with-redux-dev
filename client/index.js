@@ -13,19 +13,30 @@ import { sentry_url, logException } from './data/config';
 // Raven.config(sentry_url).install();
 // Raven.config(sentry_url).install();
 
+/*
 Raven.config(sentry_url, {
   tags: {
-    git_commit: 'errors90574f',
-    userLevel: 'king'
+    git_commit: 'gy7h90574f',
+    userLevel: 'queen'
   }
 }).install();
+*/
 
+/*
 logException(new Error('download Errors'), {
   email: 'daniel@re-re-gallery.com'
 });
+*/
 
+/*
+Raven.captureMessage('Something bad is happening!');
+Raven.showReportDialog();
+*/
 
+/*
 console.log(window.didNotExist.sadHappyFace);
+*/
+
 
 const rootDiv = document.getElementById('root');
 const router = (
