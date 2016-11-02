@@ -2,7 +2,7 @@ import Raven from 'raven-js';
 
 const sentry_key = '96a2fdf024204bcf94cb55cc1cc6a330';
 const sentry_app = '111528';
-export const sentry_url = `https://${sentry_key}@app.getsentry.com/${sentry_app}`;
+export const sentry_url = `https://${ sentry_key }@sentry.io/${ sentry_app }`;
 
 // Raven.config('https://96a2fdf024204bcf94cb55cc1cc6a330@sentry.io/111528').install();
 

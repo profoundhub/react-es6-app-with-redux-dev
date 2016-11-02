@@ -11,6 +11,10 @@ import Raven from 'raven-js';
 import { sentry_url } from './data/config';
 Raven.config(sentry_url).install();
 
+
+console.log(window.comment.doesNotExist.sadFace);
+
+
 const rootDiv = document.getElementById('root');
 const router = (
   <Provider store={ store }>
