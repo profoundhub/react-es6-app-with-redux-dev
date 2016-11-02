@@ -5,23 +5,24 @@ import Comments from './Comments';
 const Single = React.createClass({
   render() {
     const { postId } = this.props.params;
-    // console.log(postId);
+      // console.log(postId);
     const i = this.props.posts.findIndex((post) => post.code === postId);
-    // console.log(i);
+      // console.log(i);
     const post = this.props.posts[i];
-    // console.log(post);
+      // console.log(post);
     const postComments = this.props.comments[postId] || [];
 
     return (
       <div className="single-photo">
         <Photo i={ i } post={ post } { ...this.props } />
-        <Comments postComments={ postComments } />
+        <Comments postComments={ postComments }  {...this.props} />
       </div>
     )
   }
 });
 
-// <Comments postComments={ postComments } />        
-// <p>I am the single</p>
+  // <Comments postComments={ postComments } />        
+  
+  // <p>I am the single</p>
 
 export default Single;
