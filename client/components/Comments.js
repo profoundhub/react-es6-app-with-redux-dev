@@ -28,7 +28,6 @@ const Comments = React.createClass({
   },
   handleSubmit(e) {
     e.preventDefault();
-    
 
 
     // console.log("Submitting new inputs for the Forms!");
