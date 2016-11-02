@@ -8,12 +8,24 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
 import Raven from 'raven-js';
-import { sentry_url } from './data/config';
-Raven.config(sentry_url).install();
+import { sentry_url, logException } from './data/config';
+
+// Raven.config(sentry_url).install();
+// Raven.config(sentry_url).install();
+
+Raven.config(sentry_url, {
+  tags: {
+    git_commit: 'errors90574f',
+    userLevel: 'king'
+  }
+}).install();
+
+logException(new Error('download Errors'), {
+  email: 'daniel@re-re-gallery.com'
+});
 
 
-console.log(window.comment.doesNotExist.sadFace);
-
+console.log(window.didNotExist.sadHappyFace);
 
 const rootDiv = document.getElementById('root');
 const router = (
