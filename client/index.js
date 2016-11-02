@@ -7,10 +7,17 @@ import PhotoGrid from './components/PhotoGrid';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
+import Raven from 'raven-js';
+import { sentry_url } from './data/config';
+Raven.config(sentry_url).install();
+
+
+console.log(window.comment.doesNotExist.sadFace);
+
 
 const rootDiv = document.getElementById('root');
 const router = (
-  <Provider store={store}>
+  <Provider store={ store }>
     <Router history={ history }>
       <Route path="/" component={ App }>
         <IndexRoute component={ PhotoGrid }></IndexRoute>
