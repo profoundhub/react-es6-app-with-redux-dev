@@ -10,7 +10,6 @@ function mapStateToProps(state) {
   }
 }
 
-
 const App = connect(mapStateToProps, mapDispachToProps)(Main);
 
 export default App;
