@@ -2,6 +2,14 @@ import React from 'react';
 
 // Hello, I am a Comment!
 
+/*
+    try {
+        doSomething(a[0])
+    } catch(e) {
+        Raven.captureException(e)
+    }
+*/
+
 const Comments = React.createClass({
   renderComment(comment, i) {
 //       console.log(comment);
@@ -18,10 +26,11 @@ const Comments = React.createClass({
         </div>
     )
   },
-
   handleSubmit(e) {
     e.preventDefault();
     
+
+
     // console.log("Submitting new inputs for the Forms!");
 
     const { postId } = this.props.params;
