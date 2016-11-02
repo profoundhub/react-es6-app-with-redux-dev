@@ -9,6 +9,7 @@
 // + Comment(s)
 // postId === index ?
   export function addComment(postId, author, comment) {
+  //  console.log("Test: Dispatching Add Comments Func.");
     return {
       type: 'ADD_COMMENT',
       postId,

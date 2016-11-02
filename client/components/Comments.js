@@ -22,14 +22,13 @@ const Comments = React.createClass({
   handleSubmit(e) {
     e.preventDefault();
     
-    console.log("Submitting new inputs for the Forms!");
+    // console.log("Submitting new inputs for the Forms!");
 
     const { postId } = this.props.params;
     const author = this.refs.author.value;
     const comment = this.refs.comment.value;
 
-    const author = this.refs.author.value;
-    console.log(postId, author, comment);
+    // console.log(postId, author, comment);
 
     this.props.addComment(postId, author, comment);
     this.refs.commentForm.reset();
