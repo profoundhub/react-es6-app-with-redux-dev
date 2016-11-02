@@ -2,7 +2,6 @@ import React from 'react';
 
 const Comments = React.createClass({
 
-/*
   renderComment(comment, i) {
     return (
         
@@ -13,15 +12,17 @@ const Comments = React.createClass({
         </div>
     )
   },
-*/
 
   render() {
     return (
       <div className="comments">
-        Hello, I am a Comment!
+           { this.props.postComments.map(this.renderComment) }
+        
       </div>
     )
   }
 });
+
+// Hello, I am a Comment!
 
 export default Comments;
